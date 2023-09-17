@@ -45,7 +45,7 @@ const char* getFromMyCache(Cache* cache , const char* key){
 
     MyCache*curr = cache->entries[idx];
     while(curr != NULL){
-        if(strcmp(curr->key,key) == 0){
+        if(strcmp(curr->key,key) == 0){ // if key matches
             return curr->val;
         }
         curr = curr->next;
